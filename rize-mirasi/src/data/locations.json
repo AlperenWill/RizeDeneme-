@@ -1,0 +1,186 @@
+{
+  "meta": {
+    "app": "Rize Mirası Keşif Simülasyonu",
+    "proje": "TÜBİTAK destekli eğitim projesi",
+    "hedefKitle": "10 yaş grubu",
+    "dil": "tr"
+  },
+  "bolumler": [
+    {
+      "id": "bolum1",
+      "no": 1,
+      "ad": "Rize Sahili ve Tarihi Kale",
+      "ozet": "Deniz kenarı, taş zemin ve yeşil tepeler arasında Bizans'a yolculuk.",
+      "ortam": {
+        "gokyuzu": "#7ec8e3",
+        "sis": "#cfe6f2",
+        "sisUzakligi": 140,
+        "gunes": "#fff3d6",
+        "ambiyans": ["dalga", "martı", "rüzgar"]
+      },
+      "spawn": { "konum": [-2, 1.7, 26], "yon": 180 }
+    },
+    {
+      "id": "bolum2",
+      "no": 2,
+      "ad": "Çay Bahçeleri (UNESCO Teması)",
+      "ozet": "Yeşil çay sıraları, dere sesi ve elle toplama geleneği.",
+      "ortam": {
+        "gokyuzu": "#9fd8a0",
+        "sis": "#dff2df",
+        "sisUzakligi": 120,
+        "gunes": "#fdf6d8",
+        "ambiyans": ["dere", "kuş", "rüzgar"]
+      },
+      "spawn": { "konum": [0, 1.7, 30], "yon": 180 }
+    },
+    {
+      "id": "bolum3",
+      "no": 3,
+      "ad": "Zilkale ve Doğa",
+      "ozet": "Fırtına Vadisi'nde sisli hava, yüksek kayalıklar ve 14. yüzyıl kalesi.",
+      "ortam": {
+        "gokyuzu": "#b8c6d9",
+        "sis": "#c9d4e2",
+        "sisUzakligi": 70,
+        "gunes": "#eef2f8",
+        "ambiyans": ["dere", "rüzgar", "baykuş"]
+      },
+      "spawn": { "konum": [0, 1.7, 34], "yon": 180 }
+    }
+  ],
+  "mekanlar": [
+    {
+      "id": "rize-kalesi",
+      "bolumId": "bolum1",
+      "ad": "Rize Kalesi",
+      "ikon": "🏰",
+      "ozet": "Bizans döneminden kalma taş surlar.",
+      "konum": [-10, 0, -14],
+      "incelemeMesafesi": 9,
+      "kameraAcisi": { "konum": [-2, 4.5, -4], "bakis": [-10, 6, -14] },
+      "icerik": {
+        "baslik": "Rize Kalesi",
+        "dönem": "Bizans Dönemi (yaklaşık 6. yüzyıl)",
+        "paragraflar": [
+          "Rize Kalesi, şehrin üzerinde yükselen yeşil bir tepe'nin üstündedir. Bizanslılar burayı denizden gelen gemileri gözetlemek için yapmış.",
+          "Surlar büyük taş bloklardan, harç kullanmadan örülmüş gibi görünse de aslında özel bir kireç harcı vardır. Her taşın şekli farklıdır; ustalar onları puzzle gibi oturtmuş.",
+          "Kalenin içinde daha sonra Cenevizliler ve Osmanlılar da küçük kaleler (iç kale) eklemiş. Bugün hâlâ ayakta olan burçlar binlerce yıllık bir hikâye anlatıyor."
+        ],
+        "bilgiKutu": "💡 Bilgi: Kalenin doğu duvarındaki taş işçiliğinde üçgen tuğla dizileri görebilirsin. Bu teknik 'cloisonné' olarak adlandırılır ve Bizans mimarisinin imzasıdır.",
+        "etiketler": ["Bizans", "Savunma", "Taş İşçiliği", "Deniz Gözetleme"]
+      },
+      "gercek": true
+    },
+    {
+      "id": "tarihi-iskele",
+      "bolumId": "bolum1",
+      "ad": "Tarihi İskele",
+      "ikon": "⚓",
+      "ozet": "Şehrin deniz ticaretinin kalbi.",
+      "konum": [8, 0, 16],
+      "incelemeMesafesi": 8,
+      "kameraAcisi": { "konum": [2, 2.6, 12], "bakis": [10, 0.6, 18] },
+      "icerik": {
+        "baslik": "Tarihi İskele",
+        "dönem": "19. yüzyıl (Osmanlı liman yapısı)",
+        "paragraflar": [
+          "Eskiden ahşap gemiler bu iskeleye yanaşırmış. Rize'den fındık, mısır ve kereste gönderilir; karşılığında kumaş ve baharat gelirmiş.",
+          "İskele tahtaları zamanla yenilenmiş ama altındaki granit blok iskelet aynıdır. Denizin tuzu tahtları her yıl biraz daha aşındırır.",
+          "Balıkçılar sabahın erken saatinde burada teknelerini boyar, ağlarını yamar. İskele hâlâ şehrin denizle kurduğu dostluğun simgesidir."
+        ],
+        "bilgiKutu": "💡 Bilgi: Rize iskelesi, Karadeniz'in en eski ticaret noktalarından biridir. Antik Yunanlılar buraya 'Rhizous' derdi — bugünkü 'Rize' adının kökü budur.",
+        "etiketler": ["Ticaret", "Denizcilik", "Osmanlı", "Balıkçılık"]
+      },
+      "gercek": true
+    },
+    {
+      "id": "cay-bitkisi",
+      "bolumId": "bolum2",
+      "ad": "Çay Bitkisi",
+      "ikon": "🍃",
+      "ozet": "UNESCO Somut Olmayan Kültürel Miras listesinde.",
+      "konum": [-6, 0, -8],
+      "incelemeMesafesi": 7,
+      "kameraAcisi": { "konum": [-2, 2.2, -4], "bakis": [-6, 1, -8] },
+      "icerik": {
+        "baslik": "Çay Bitkisi ve Elle Toplama",
+        "dönem": "Cumhuriyet dönemi — UNESCO 2022",
+        "paragraflar": [
+          "Rize'nin yamaçları gürültüsüz yeşil bir okyanus gibidir: çay bahçeleri. Çay tohumu Türkiye'ye 19. yüzyılın sonunda getirilmiş, ilk ciddi üretim 1940'larda Rize'de yapılmıştır.",
+          "En kaliteli çay, 'iki yaprak bir tomurcuk' denen taze sürgünlerden elde edilir. Bunu ancak el yapabilir; makine bütün yaprakları karıştırır.",
+          "Çay hasadı bir topluluk ritüelidir. Kadınlar bel sepetleriyle yamaçlara dizilir, türüküler söyleyerek toplar. Bu gelenek UNESCO Somut Olmayan Kültürel Miras listesindedir."
+        ],
+        "bilgiKutu": "💡 Bilgi: Türkiye dünyada kişi başına en çok çay içen ülkedir. Bir demliğin arkasında Rize'nin yağmuru, sisi ve emeği vardır.",
+        "etiketler": ["UNESCO", "Tarım", "Gelenek", "Emek"]
+      },
+      "gercek": true
+    },
+    {
+      "id": "tas-kopru",
+      "bolumId": "bolum2",
+      "ad": "Taş Köprü",
+      "ikon": "🌉",
+      "ozet": "Harçsız kemer tekniğiyle örülmüş Osmanlı köprüsü.",
+      "konum": [9, 0, -12],
+      "incelemeMesafesi": 9,
+      "kameraAcisi": { "konum": [3, 2.8, -6], "bakis": [9, 1.2, -12] },
+      "icerik": {
+        "baslik": "Taş Köprü",
+        "dönem": "Osmanlı Dönemi (17.–18. yüzyıl)",
+        "paragraflar": [
+          "Bu köprünün kemeri tek bir taş sıra ile ayağa kalkar. Ortadaki 'kilit taşı' çıkarılsa bütün kemer çöker — ama binlerce yıldır ayakta!",
+          "Ustalar taşları örerken harç kullanmamış. Her taş komşusuna yaslanarak yükü zemine aktarıyor. Buna 'kuru örme' tekniği denir.",
+          "Vadi sel getirdiğinde su kemerin altından geçer; köprü suyla savaşmaz, ona yol verir. Bu yüzden yıkılmaz."
+        ],
+        "bilgiKutu": "💡 Bilgi: Karadeniz'deki taş köprülerin çoğu Fırtına Vadisi çevresindedir. Gelin, damat ve asker uğurlama adetlerinde köprüden geçmek şans sayılırdı.",
+        "etiketler": ["Osmanlı", "Mühendislik", "Kemer", "Harçsız Taş"]
+      },
+      "gercek": true
+    },
+    {
+      "id": "zilkale-duvarlari",
+      "bolumId": "bolum3",
+      "ad": "Zilkale Duvarları",
+      "ikon": "🛡️",
+      "ozet": "Fırtına Vadisi'ne hâkim 14. yüzyıl kalesi.",
+      "konum": [0, 0, -22],
+      "incelemeMesafesi": 10,
+      "kameraAcisi": { "konum": [0, 4.2, -10], "bakis": [0, 8, -22] },
+      "icerik": {
+        "baslik": "Zilkale",
+        "dönem": "14. yüzyıl (Pontus / Trabzon İmparatorluğu mirası)",
+        "paragraflar": [
+          "Zilkale, Fırtına Vadisi'nin üzerine 100 metre yukarıdan bakar. Adı 'kalenin içindeki kale' anlamına gelir: önce dış surlar, sonra iç kale kapılarını kapatırdın.",
+          "Yedi katlı kulesi (bey konağı) hâlâ ayaktadır. Merdivenleri dar ve spirallidir — savunmayı kolaylaştırır, saldıranı yavaşlatır.",
+          "Kale, vadi boyunca yürüyüş yolu üzerindeki tüccar kervanlarını korumuş. Osmanlı döneminde de garnizon olarak kullanılmaya devam etmiştir."
+        ],
+        "bilgiKutu": "💡 Bilgi: Zilkale'ye bugün patika bir yürüyüşle çıkılır. Yol boyunca ahşap seyir teraslarından vadideki sisin nasıl yükseldiğini izleyebilirsin.",
+        "etiketler": ["14. Yüzyıl", "Strateji", "Fırtına Vadisi", "Kule"]
+      },
+      "gercek": true
+    },
+    {
+      "id": "dere-kenari",
+      "bolumId": "bolum3",
+      "ad": "Dere Kenarı",
+      "ikon": "🐾",
+      "ozet": "Fırtına Deresi'nin canlı ekosistemi.",
+      "konum": [-9, 0, 6],
+      "incelemeMesafesi": 8,
+      "kameraAcisi": { "konum": [-4, 2.0, 10], "bakis": [-9, 0.2, 6] },
+      "icerik": {
+        "baslik": "Fırtına Deresi Ekosistemi",
+        "dönem": "Doğal miras — güncel",
+        "paragraflar": [
+          "Fırtına Deresi Kaçkar Dağları'ndaki kar ve buzullardan beslenir. Yazın bile suyu soğuktur; bu yüzden alabalık burada mutlu olur.",
+          "Dere kenarında kurt papağanı (balıkçı kuşu), su samuru ve nadir kelebekler yaşar. Temiz akan bir dere, sağlıklı bir ormanın kanıtıdır.",
+          "Yağmur sonrası dere kabarır ve rengi süt beyazı olur. Bu, kayaların ince unuf hale gelip suya karışmasıdır — dağlar böylece her yıl biraz daha küçülür."
+        ],
+        "bilgiKutu": "💡 Bilgi: Dere üzerinde rafting yapılır ama nesli tehlikedeki kuşların yuvalarına yaklaşmak yasaktır. Keşfederken gözlemci ol, dokunma!",
+        "etiketler": ["Ekoloji", "Fırtına", "Kaçkarlar", "Biyoçeşitlilik"]
+      },
+      "gercek": true
+    }
+  ]
+}
